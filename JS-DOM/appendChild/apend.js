@@ -8,4 +8,5 @@ let list = document.createElement("li")
  console.log(menu.textContent)
 
 // this is innerHtml
- menu.innerHTML = "<h1>Hello..!</h1>"
+//  menu.innerHTML = "<h1>Hello..!</h1>"
+
