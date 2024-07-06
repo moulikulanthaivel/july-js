@@ -17,6 +17,11 @@
        let menu = document.getElementById("menu").children[3];
 
        menu.replaceChild(newList, menu.childNodes[0]);
+       
+       //clone node 
+        let newNode = menu.cloneNode(true);
+        console.log(newNode)
+
     </script>
 </body>
 </html>
