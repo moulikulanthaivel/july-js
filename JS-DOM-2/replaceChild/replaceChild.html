@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>home1</li>
+        <li>home2</li>
+        <li>home3</li>
+        <li>home4</li>
+    </ul>
+    <script>
+        const newList = document.createTextNode("new home");
+       let menu = document.getElementById("menu").children[3];
+
+       menu.replaceChild(newList, menu.childNodes[0]);
+    </script>
+</body>
+</html>

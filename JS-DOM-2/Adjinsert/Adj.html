@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <ul id="main">
+            <li>hello</li>
+            <li>hello1</li>
+            <li>hello2</li>
+            <li>hello3</li>
+        </ul>
+    </div>
+
+   <script>
+    let menu = document.getElementById("main")
+    menu.insertAdjacentHTML("afterend","<li>new one</li>")
+   </script>
+</body>
+</html>
