@@ -12,6 +12,13 @@
         <li>home3</li>
         <li>home4</li>
     </ul>
+
+    <ul id="list">
+        <li>add</li>
+        <li>sub</li>
+        <li>multi</li>
+        <li>div</li>
+    </ul>
     <script>
         const newList = document.createTextNode("new home");
        let menu = document.getElementById("menu").children[3];
@@ -21,6 +28,17 @@
        //clone node 
         let newNode = menu.cloneNode(true);
         console.log(newNode)
+
+        //remove element child node
+        let list = document.getElementById("list");
+        list.removeChild(list.lastElementChild)
+
+        //insertbefore to existing childnode
+        let newOne = document.createElement("li")
+        let newtext = document.createTextNode("water")
+        newOne.appendChild(newtext);
+
+        list.insertBefore( newOne,list.children[0]);
 
     </script>
 </body>
