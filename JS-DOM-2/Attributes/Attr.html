@@ -16,6 +16,17 @@
     </div>
 
     <input type="text" id="main">
+
+ <br><br><br>
+
+   <form id="maintain">
+    <label >enter your name</label>
+    <input type="text" name="text" placeholder="name"> <br>
+    <label>password</label>
+    <input   name="password" id="password">
+   </form>
+
+
     <script>
         let list = document.getElementById("list")
         console.log(list.attributes)
@@ -26,6 +37,30 @@
         console.log(inputBox.getAttribute("type"))
 
         // setAttributes
-    </script>
+        list.setAttribute("class","User")
+        console.log(list)
+
+        //hasAttribite
+        //its shows only true or false statement. it accept only one array.
+
+        console.log(inputBox.hasAttribute("type"))
+
+        list.removeAttribute("class")
+        console.log(list)
+
+
+        //getAtrribute
+    let create = document.getElementById("password")
+        console.log(create.getAttribute("type"))
+
+        //setAttribute
+        console.log(create.setAttribute("type", "password"))
+
+        //hasAttribute
+        console.log(create.hasAttribute("name"))
+
+        // removeAttribute
+        console.log(create.removeAttribute("name"))
+</script>
 </body>
 </html>
