@@ -14,11 +14,26 @@
     </div>
 
     <script>
+        //style property
         let main = document.getElementById("main")
             main.style.color = "blue";
             main.style.padding = "20px"
             console.log(main.style.color);
             console.log(main)
+
+        //css text
+        main.style.cssText +="width:200px" , "height:100px" ;
+        console.log(main);
+        // +=  this represents existing value and this values.......
+
+
+        //getComputedstyle()
+        console.log(window.getComputedStyle(main).padding)
+
+        //className property
+        main.className += "new"
+        console.log(main)
+
     </script>
 </body>
 </html>
